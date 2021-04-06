@@ -1449,6 +1449,11 @@ bool AXP20X_Class::getTimerStatus(void)
     return AXP_NOT_SUPPORT;
 }
 
+int AXP20X_Class::setLowTemp(uint8_t temp) {                            // SP6VWX
+    _writeByte(AXP202_VLTF_CHGSET,1,&temp);                             // Charging temperature low level 
+    return 0;
+}
+
 /***********************************************
  *              !!! GPIO FUNCTION !!!
  * *********************************************/

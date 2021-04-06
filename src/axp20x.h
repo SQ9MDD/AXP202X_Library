@@ -885,7 +885,8 @@ public:
     int         setBackupChargeControl(bool en);
     int         setBackupChargeVoltage(axp202_backup_voltage_t opt);
     int         setBackupChargeCurrent(axp202_backup_current_t opt);
-
+    // SP6VWX
+    int         setLowTemp(uint8_t temp);
 
     // Precharge timeout setting
     int         setPrechargeTimeout(axp202_precharge_timeout_t opt);
